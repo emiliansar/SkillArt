@@ -1,0 +1,215 @@
+@import "../../node_modules/swiper/swiper-bundle";
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost-Light.woff2') format('woff2'),
+        url('../fonts/Jost-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost-Regular.woff2') format('woff2'),
+        url('../fonts/Jost-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost-Medium.woff2') format('woff2'),
+        url('../fonts/Jost-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost-SemiBold.woff2') format('woff2'),
+        url('../fonts/Jost-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_18pt-Regular.woff2') format('woff2')
+        url('../fonts/Inter_18pt-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter_18pt-Medium.woff2') format('woff2')
+        url('../fonts/Inter_18pt-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+html,
+body {
+    background-color: #fff;
+}
+
+.animation {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #1D1D1D;
+    &--text {
+        width: 2500px;
+        position: relative;
+        padding: 1px;
+        display: flex;
+        gap: 43px;
+        animation: line-text 3s linear 0s infinite;
+    }
+    &--text__item {
+        font-family: 'Jost';
+        font-weight: 400;
+        font-size: 14px;
+        color: #fff;
+        position: relative;
+    }
+    &--text__item::before {
+        position: absolute;
+        content: "";
+        width: 3px;
+        height: 3px;
+        left: -8%;
+        top: 38%;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+}
+
+@keyframes line-text {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-12.3%);
+    }
+}
+
+.container {
+    max-width: 1620px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    padding: 28px 0;
+    justify-content: space-between;
+    align-items: center;
+
+    &--pages {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &--pages__link {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #1D1D1D;
+    }
+
+    &--pages__index {
+        padding: 0 50px;
+    }
+
+    &--pages__logo {
+        max-width: 244px;
+        width: 100%;
+        min-width: 169px;
+    }
+
+    &--links {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+.footer {
+    background-color: #1D1D1D;
+    padding: 41px 0 100px;
+
+    & .container {
+        max-width: 1420px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & .descr--title {
+        display: inline-block;
+        width: 100%;
+        font-family: 'Jost';
+        font-weight: 300;
+        color: #fff;
+        line-height: 1.45;
+        text-align: center;
+    }
+
+    & .nav {
+        padding: 0;
+        display: flex;
+        gap: 80px;
+        align-items: flex-start;
+    }
+}
+
+.nav--descr {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    &__item span {
+        font-family: 'Jost';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.45;
+        color: #fff;
+    }
+
+    &__title span{
+        font-family: 'Jost';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.45;
+        color: #B0B0B0;
+        margin-bottom: 5px;
+    }
+}
