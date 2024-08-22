@@ -15,3 +15,19 @@ const sliderTop = new Swiper('.swiper', {
     },
     speed: 1000,
 });
+
+const month = new Swiper('.month', {
+    clickable: true,
+    slidesPerView: 3,
+    spaceBetween: 100,
+});
+
+const plan = new Swiper('.course--plan', {
+    loop: false,
+    slidesPerView: 1,
+    clickable: true,
+    spaceBetween: 10,
+    thumbs: {
+        swiper: month,
+    },
+});
