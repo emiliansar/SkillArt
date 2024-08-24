@@ -3,7 +3,8 @@
 @font-face {
     font-family: 'Jost';
     src: url('../fonts/Jost-Light.woff2') format('woff2'),
-        url('../fonts/Jost-Light.woff') format('woff');
+        url('../fonts/Jost-Light.woff') format('woff'),
+        url('../fonts/src/Jost-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
@@ -11,7 +12,8 @@
 @font-face {
     font-family: 'Jost';
     src: url('../fonts/Jost-Regular.woff2') format('woff2'),
-        url('../fonts/Jost-Regular.woff') format('woff');
+        url('../fonts/Jost-Regular.woff') format('woff'),
+        url('../fonts/src/Jost-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -19,7 +21,8 @@
 @font-face {
     font-family: 'Jost';
     src: url('../fonts/Jost-Medium.woff2') format('woff2'),
-        url('../fonts/Jost-Medium.woff') format('woff');
+        url('../fonts/Jost-Medium.woff') format('woff'),
+        url('../fonts/src/Jost-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -27,7 +30,8 @@
 @font-face {
     font-family: 'Jost';
     src: url('../fonts/Jost-SemiBold.woff2') format('woff2'),
-        url('../fonts/Jost-SemiBold.woff') format('woff');
+        url('../fonts/Jost-SemiBold.woff') format('woff'),
+        url('../fonts/src/Jost-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
@@ -35,7 +39,8 @@
 @font-face {
     font-family: 'Inter';
     src: url('../fonts/Inter_18pt-Regular.woff2') format('woff2')
-        url('../fonts/Inter_18pt-Regular.woff') format('woff');
+        url('../fonts/Inter_18pt-Regular.woff') format('woff'),
+        url('../fonts/src/Inter_18pt-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -43,7 +48,8 @@
 @font-face {
     font-family: 'Inter';
     src: url('../fonts/Inter_18pt-Medium.woff2') format('woff2')
-        url('../fonts/Inter_18pt-Medium.woff') format('woff');
+        url('../fonts/Inter_18pt-Medium.woff') format('woff'),
+        url('../fonts/src/Inter_18pt-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
@@ -66,7 +72,7 @@ html {
 
 body {
     font-family: 'Inter', sans-serif;
-    color: #000;
+    color: #1D1D1D;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.2;
@@ -83,7 +89,9 @@ body {
     font-weight: 500;
     font-size: 55px;
     line-height: 79px;
+    max-width: 1085px;
     color: #1D1D1D;
+    margin: 0 auto;
 }
 
 .section--title {
@@ -737,6 +745,183 @@ main,
         font-weight: 400;
         font-size: 20px;
         color: #fff;
+    }
+}
+
+.course {
+    &--big__title {
+        text-align: center;
+        margin-bottom: 85px;
+    }
+
+    &--content {
+        margin-bottom: 80px;
+    }
+
+    &--list {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &--item {
+        display: grid;
+        grid-template-columns: 360px auto;
+        padding-bottom: 25px;
+
+    }
+
+    &--info__title p {
+        font-family: 'Jost', sans-serif;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 36px;
+    }
+
+    &--info__title.course--for__title {
+        align-self: center;
+    }
+
+    &--info__title.price--title {
+        align-self: self-end;
+    }
+
+    &--info__content p {
+        max-width: 790px;
+        width: 100%;
+    }
+
+    &--info__content .course--for {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.45;
+    }
+
+    &--info__content .course--day__time {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+        line-height: 1.45;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+
+        & .time {
+            font-weight: 400;
+        }
+    }
+
+    &--info__content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        & .content--text {
+            font-weight: 500;
+            line-height: 1.45;
+            font-size: 20px;
+        }
+
+        & .content--text p {
+            position: relative;
+        }
+
+        & .content--text p::before {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            top: 12px;
+            left: -12px;
+            background-color: #1D1D1D;
+            border-radius: 100%;
+        }
+
+        & .grid--list {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 50px 20px;
+        }
+
+        & .grid--item {
+            text-align: center;
+
+            & img {
+                margin-bottom: 15px;
+            }
+
+            & p {
+                font-family: 'Jost', sans-serif;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 1.45;
+                max-width: 195px;
+                margin: 0 auto;
+            }
+        }
+
+        & .course--date {
+            line-height: 1.45;
+        }
+
+        & .course--date span {
+            font-weight: 500;
+            color: #5B5B5B;
+            font-size: 18px;
+        }
+
+        & .course--price {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 40px;
+            justify-self: center;
+        }
+
+        & .course--price span {
+            font-weight: 400;
+            font-size: 20px;
+            color: #5B5B5B;
+        }
+    }
+}
+
+.report {
+    margin-bottom: 220px;
+
+    &--title {
+        text-align: center;
+        margin-bottom: 85px;
+    }
+
+    &--slider {
+        position: relative;
+    }
+
+    & .swiper-slide {
+        max-width: 520px;
+        width: 100%;
+    }
+
+    &--wrapper {
+        width: 100%;
+    }
+
+    &--wrapper img {
+        width: 100%;
+    }
+
+    & .swiper-pagination {
+        bottom: -74px !important;
+    }
+
+    & .swiper-pagination-bullet {
+        background-color: #E2E2E2;
+        opacity: 0.5;
+    }
+
+    & .swiper-pagination-bullet-active {
+        background-color: #E2E2E2;
+        opacity: 1.0;
     }
 }
 

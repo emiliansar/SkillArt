@@ -31,3 +31,19 @@ const plan = new Swiper('.course--plan', {
         swiper: month,
     },
 });
+
+const report = new Swiper('.report--slider', {
+    loop: false,
+    slidesPerView: 3,
+    clickable: true,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+    mousewheel: {
+        sensitivity: 1,
+        eventsTarget: '.report--slider',
+    },
+    spaceBetween: 20,
+});
