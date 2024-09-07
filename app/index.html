@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,14 +25,28 @@
                 <nav class="nav">
                     <ul class="nav--pages">
                         <li class="nav--pages__item">
-                            <a href="contacts.html" class="nav--pages__link">Контакты</a>
+                            <a href="#connection" class="nav--pages__link">Контакты</a>
                         </li>
                         <li class="nav--pages__item">
                             <a href="about.html" class="nav--pages__link">О нас</a>
                         </li>
                         <li class="nav--pages__item nav--pages__index">
                             <a href="index.html" class="nav--pages__link">
-                                <img src="/images/sprite.svg#skillart-logo" alt="SKILLart logo" class="nav--pages__logo">
+                                <!-- <img src="images/src/skillart-logo.svg" alt="SKILLart logo" class="nav--pages__logo"> -->
+                                <!-- <picture>
+                                    <source srcset="images/skillart-logo-black-1920red.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                    <source srcset="images/skillart-logo-black-1440red.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                    <source srcset="images/skillart-logo-black-1024red.jpeg" type="image/jpeg" media="(min-width: 1000px)">
+                                    <source srcset="images/skillart-logo-black-393red.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                    <img src="images/skillart-logo-black-1920.jpeg" class="nav--pages__logo">
+                                </picture> -->
+                                <picture>
+                                    <source srcset="images/skillart-logo-black-1920.svg" type="image/svg" media="(min-width: 1600px)">
+                                    <source srcset="images/skillart-logo-black-1440.svg" type="image/svg" media="(min-width: 1440px)">
+                                    <source srcset="images/skillart-logo-black-1024.svg" type="image/svg" media="(min-width: 1000px)">
+                                    <source srcset="images/skillart-logo-black-393.svg" type="image/svg" media="(min-width: 0px)">
+                                    <img src="images/skillart-logo-black-1920.svg" class="nav--pages__logo">
+                                </picture>
                             </a>
                         </li>
                         <li class="nav--pages__item">
@@ -45,25 +59,89 @@
                     <ul class="nav--links">
                         <li class="nav--links__item">
                             <a href="tel:+79061536104" class="nav--links__link">
-                                <img src="../images/src/phone.svg" alt="phone-link" class="nav--links__img">
+                                <img src="images/phone.svg" alt="phone-link" class="nav--links__img">
                             </a>
                         </li>
                         <li class="nav--links__item">
                             <a href="mailto:emiliansar@gmail.com" class="nav--links__link">
-                                <img src="../images/src/mail.svg" alt="mail-link" class="nav--links__img">
+                                <img src="images/mail.svg" alt="mail-link" class="nav--links__img">
                             </a>
                         </li>
                             <li class="nav--links__item">
                             <a href="https://t.me/Emelay_1234" class="nav--links__link">
-                                <img src="../images/src/telegram.svg" alt="telegram-link" class="nav--links__img">
+                                <img src="images/telegram.svg" alt="telegram-link" class="nav--links__img">
                             </a>
                         </li>
                         <li class="nav--links__item">
                             <a href="" class="nav--links__link">
-                                <img src="../images/src/instagram.svg" alt="instagram-link" class="nav--links__img">
+                                <img src="images/instagram.svg" alt="instagram-link" class="nav--links__img">
                             </a>
                         </li>
                     </ul>
+                    <button class="nav--button" id="burgerButton" data-button="nav--menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="nav--menu">
+                        <ul class="nav--menu__list">
+                            <li class="nav--menu__item">
+                                <a href="#school" class="nav--menu__title--link">КУРСЫ</a>
+                            </li>
+                            <li class="nav--menu__item">
+                                    <ul class="menu--list">
+                                        <li class="menu--item">
+                                            <a href="course-junior.html" class="menu--link">Курс “Для начинающих”</a>
+                                        </li>
+                                        <li class="menu--item">
+                                            <a href="course-imitation-marble.html" class="menu--link">Курс “Имитация мрамора”</a>
+                                        </li>
+                                        <li class="menu--item">
+                                            <a href="course-loft.html" class="menu--link">Курс “Лофт”</a>
+                                        </li>
+                                        <li class="menu--item">
+                                            <a href="course-stencil-techniques.html" class="menu--link">Курс “Трафаретные техники для акцентных стен в интерьере”</a>
+                                        </li>
+                                        <li class="menu--item">
+                                            <a href="course-thin-layer.html" class="menu--link">Курс “Тонкослойные нанесения”</a>
+                                        </li>
+                                        <li class="menu--item">
+                                            <a href="course-individual-training.html" class="menu--link">Индивидуальное обучение</a>
+                                        </li>
+                                    </ul>
+                            </li>
+                            <li class="nav--menu__item">
+                                <a href="plan.html" class="nav--menu__title--link">РАСПИСАНИЕ</a>
+                            </li>
+                            <li class="nav--menu__item">
+                                <a href="index.html#connection" class="nav--menu__title--link">КОНТАКТЫ</a>
+                            </li>
+                            <li class="nav--menu__item">
+                                <ul class="links--list">
+                                    <li class="links--item">
+                                        <a href="tel:+79061536104" class="links--link">
+                                            <img src="images/phone-burger-menu.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="links--item">
+                                        <a href="mailto:emiliansar@gmail.com" class="links--link">
+                                            <img src="images/mail-burger-menu.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="links--item">
+                                        <a href="https://t.me/Emelay_1234" class="links--link">
+                                            <img src="images/telegram-burger-menu.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="links--item">
+                                        <a href="" class="links--link">
+                                            <img src="images/instagram-burger-menu.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -78,37 +156,59 @@
                     <!-- Slides -->
                     <div class="swiper-slide">
                         <picture>
-                            <source srcset="/images/slider-big-1.avif" type="image/avif"/>
-                            <source srcset="images/slider-big-1.webp" type="image/webp"/>
-                            <img src="images/slider-big-1.jpeg" alt="slide-1">
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 1750px)"/>
+                            <source srcset="images/slider-big-1-1920.jpeg" type="image/jpeg" media="(min-width: 1750px)"/>
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1440.jpeg" type="image/jpeg" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1440.webp" type="image/webp" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-1440.jpeg" type="image/jpeg" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-540.webp" type="image/webp" media="(min-width: 0px)"/>
+                            <source srcset="images/slider-big-1-540.jpeg" type="image/jpeg" media="(min-width: 0px)"/>
+                            <img src="images/slider-big-1-1920.jpeg" alt="slide-1">
                         </picture>
                     </div>
                     <div class="swiper-slide">
                         <picture>
-                            <source srcset="images/slider-big-1.avif" type="image/avif"/>
-                            <source srcset="images/slider-big-1.webp" type="image/webp"/>
-                            <img src="images/slider-big-1.jpeg" alt="slide-1">
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-1440.jpeg" type="image/jpeg" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-540.webp" type="image/webp" media="(min-width: 0px)"/>
+                            <source srcset="images/slider-big-1-540.jpeg" type="image/jpeg" media="(min-width: 0px)"/>
+                            <img src="images/slider-big-1-1920.jpeg" alt="slide-1">
                         </picture>
                     </div>
                     <div class="swiper-slide">
                         <picture>
-                            <source srcset="images/slider-big-1.avif" type="image/avif"/>
-                            <source srcset="images/slider-big-1.webp" type="image/webp"/>
-                            <img src="images/slider-big-1.jpeg" alt="slide-1">
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-1440.jpeg" type="image/jpeg" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-540.webp" type="image/webp" media="(min-width: 0px)"/>
+                            <source srcset="images/slider-big-1-540.jpeg" type="image/jpeg" media="(min-width: 0px)"/>
+                            <img src="images/slider-big-1-1920.jpeg" alt="slide-1">
                         </picture>
                     </div>
                     <div class="swiper-slide">
                         <picture>
-                            <source srcset="images/slider-big-1.avif" type="image/avif"/>
-                            <source srcset="images/slider-big-1.webp" type="image/webp"/>
-                            <img src="images/slider-big-1.jpeg" alt="slide-1">
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-1440.jpeg" type="image/jpeg" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-540.webp" type="image/webp" media="(min-width: 0px)"/>
+                            <source srcset="images/slider-big-1-540.jpeg" type="image/jpeg" media="(min-width: 0px)"/>
+                            <img src="images/slider-big-1-1920.jpeg" alt="slide-1">
                         </picture>
                     </div>
                     <div class="swiper-slide">
                         <picture>
-                            <source srcset="images/slider-big-1.avif" type="image/avif"/>
-                            <source srcset="images/slider-big-1.webp" type="image/webp"/>
-                            <img src="images/slider-big-1.jpeg" alt="slide-1">
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1920.webp" type="image/jpeg" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1920.jpeg" type="image/webp" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-1440.jpeg" type="image/jpeg" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-540.webp" type="image/webp" media="(min-width: 0px)"/>
+                            <source srcset="images/slider-big-1-540.jpeg" type="image/jpeg" media="(min-width: 0px)"/>
+                            <img src="images/slider-big-1-1920.jpeg" alt="slide-1">
                         </picture>
                     </div>
                 </div>
@@ -137,8 +237,14 @@
                     <ul class="school--cards">
                         <li class="school--cards__item card">
                             <picture>
-                                <source srcset="images/course-junior.avif" type="image/avif">
-                                <source srcset="images/course-junior.webp" type="image/webp">
+                                <source srcset="images/course-junior-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                <source srcset="images/course-junior-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                <source srcset="images/course-junior-1440.webp" type="image/webp" media="(min-width: 1440px)">
+                                <source srcset="images/course-junior-1440.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                <source srcset="images/course-junior-1024.webp" type="image/webp" media="(min-width: 640px)">
+                                <source srcset="images/course-junior-1024.jpeg" type="image/jpeg" media="(min-width: 640px)">
+                                <source srcset="images/course-junior-640.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                <source srcset="images/course-junior-640.webp" type="image/webp" media="(min-width: 0px)">
                                 <img src="images/course-junior.jpeg" alt="Курс для начинающих" class="school--img">
                             </picture>
                             <p class="card--title">
@@ -175,10 +281,21 @@
                             </div>
                         </li>
                         <li class="school--cards__item card">
-                            <picture>
+                            <!-- <picture>
                                 <source srcset="images/course-imitation-marble.avif" type="image/avif">
                                 <source srcset="images/course-imitation-marble.webp" type="image/webp">
                                 <img src="images/course-imitation-marble.jpeg" alt="Курс по имитации мрамора" class="school--img">
+                            </picture> -->
+                            <picture>
+                                <source srcset="images/course-imitation-marble-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                <source srcset="images/course-imitation-marble-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                <source srcset="images/course-imitation-marble-1440.webp" type="image/webp" media="(min-width: 1440px)">
+                                <source srcset="images/course-imitation-marble-1400.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                <source srcset="images/course-imitation-marble-1024.webp" type="image/webp" media="(min-width: 640px)">
+                                <source srcset="images/course-imitation-marble-1024.jpeg" type="image/jpeg" media="(min-width: 640px)">
+                                <source srcset="images/course-imitation-marble-640.webp" type="image/webp" media="(min-width: 0px)">
+                                <source srcset="images/course-imitation-marble-640.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                <img src="images/course-imitation-marble-1920.jpeg" alt="Курс по имитации мрамора" class="school--img">
                             </picture>
                             <p class="card--title">
                                 Курс “Имитация мрамора”
@@ -214,10 +331,21 @@
                             </div>
                         </li>
                         <li class="school--cards__item card">
-                            <picture>
+                            <!-- <picture>
                                 <source srcset="images/course-loft.avif" type="image/avif">
                                 <source srcset="images/course-loft.webp" type="image/webp">
                                 <img src="images/course-loft.jpeg" alt="Курс лофт" class="school--img">
+                            </picture> -->
+                            <picture>
+                                <source srcset="images/course-loft-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                <source srcset="images/course-loft-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                <source srcset="images/course-loft-1400.webp" type="image/webp" media="(min-width: 1440px)">
+                                <source srcset="images/course-loft-1400.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                <source srcset="images/course-loft-1024.webp" type="image/webp" media="(min-width: 640px)">
+                                <source srcset="images/course-loft-1024.jpeg" type="image/jpeg" media="(min-width: 640px)">
+                                <source srcset="images/course-loft-640.webp" type="image/webp" media="(min-width: 0px)">
+                                <source srcset="images/course-loft-640.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                <img src="images/course-loft-1920.jpeg" alt="Курс лофт" class="school--img">
                             </picture>
                             <p class="card--title">
                                 Курс “Лофт”
@@ -249,10 +377,21 @@
                             </div>
                         </li>
                         <li class="school--cards__item card">
-                            <picture>
+                            <!-- <picture>
                                 <source srcset="images/course-stencil.avif" type="image/avif">
                                 <source srcset="images/course-stencil.webp" type="image/webp">
                                 <img src="images/course-stencil.jpeg" alt="Трафаретные техники" class="school--img">
+                            </picture> -->
+                            <picture>
+                                <source srcset="images/course-stencil-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                <source srcset="images/course-stencil-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                <source srcset="images/course-stencil-1440.webp" type="image/webp" media="(min-width: 1440px)">
+                                <source srcset="images/course-stencil-1440.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                <source srcset="images/course-stencil-1024.webp" type="image/webp" media="(min-width: 640px)">
+                                <source srcset="images/course-stencil-1024.jpeg" type="image/jpeg" media="(min-width: 640px)">
+                                <source srcset="images/course-stencil-640.webp" type="image/webp" media="(min-width: 0px)">
+                                <source srcset="images/course-stencil-640.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                <img src="images/course-stencil-1920.jpeg" alt="Трафаретные техники" class="school--img">
                             </picture>
                             <p class="card--title">
                                 Трафаретные техники 
@@ -285,10 +424,21 @@
                             </div>
                         </li>
                         <li class="school--cards__item card">
-                            <picture>
+                            <!-- <picture>
                                 <source srcset="images/course-thin-layer.avif" type="image/avif">
                                 <source srcset="images/course-thin-layer.webp" type="image/webp">
-                                <img src="images/course-thin-layer.jpeg" alt=" Курс 'Тонкослойные нанесения'" class="school--img">
+                                <img src="images/course-thin-layer.jpeg" alt="Курс Тонкослойные нанесения" class="school--img">
+                            </picture> -->
+                            <picture>
+                                <source srcset="images/course-thin-layer-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                <source srcset="images/course-thin-layer-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                <source srcset="images/course-thin-layer-1440.webp" type="image/webp" media="(min-width: 1440px)">
+                                <source srcset="images/course-thin-layer-1440.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                <source srcset="images/course-thin-layer-1024.webp" type="image/webp" media="(min-width: 640px)">
+                                <source srcset="images/course-thin-layer-1024.jpeg" type="image/jpeg" media="(min-width: 640px)">
+                                <source srcset="images/course-thin-layer-640.webp" type="image/webp" media="(min-width: 0px)">
+                                <source srcset="images/course-thin-layer-640.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                <img src="images/course-thin-layer-1920.jpeg" alt="Курс Тонкослойные нанесения" class="school--img">
                             </picture>
                             <p class="card--title">
                                 Курс “Тонкослойные нанесения”
@@ -320,10 +470,21 @@
                             </div>
                         </li>
                         <li class="school--cards__item card">
-                            <picture>
+                            <!-- <picture>
                                 <source srcset="images/course-individual.avif" type="image/avif">
                                 <source srcset="images/course-individual.webp" type="image/webp">
-                                <img src="images/course-individual.jpeg" alt="Индивидуальное обучение" class="school--img">
+                                <img src="images/course-individual.jpeg" alt="" class="school--img">
+                            </picture> -->
+                            <picture>
+                                <source srcset="images/course-individual-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                <source srcset="images/course-individual-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                <source srcset="images/course-individual-1440.webp" type="image/webp" media="(min-width: 1440px)">
+                                <source srcset="images/course-individual-1440.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                <source srcset="images/course-individual-1024.webp" type="image/webp" media="(min-width: 640px)">
+                                <source srcset="images/course-individual-1024.jpeg" type="image/jpeg" media="(min-width: 640px)">
+                                <source srcset="images/course-individual-640.webp" type="image/webp" media="(min-width: 0px)">
+                                <source srcset="images/course-individual-640.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                <img src="images/course-individual-1920.jpeg" alt="Индивидуальное обучение" class="school--img">
                             </picture>
                             <p class="card--title">
                                 Индивидуальное обучение
@@ -376,27 +537,47 @@
                             <span>Добро пожаловать в наше сообщество и до встречи у нас в мастерской!</span>
                         </p>
                     </div>
-                    <div class="about--content__images">
-                        <div class="about--content__images--1 --content__images--img">
-                            <picture>
-                                <source srcset="images/about-1.avif" type="image/avif">
-                                <source srcset="images/about-1.webp" type="image/webp">
-                                <img src="images/about-1.jpeg" alt="О нас картинка - 1">
-                            </picture>
-                        </div>
-                        <div class="about--content__images--2 --content__images--img">
-                            <picture>
-                                <source srcset="images/about-2.avif" type="image/avif">
-                                <source srcset="images/about-2.webp" type="image/webp">
-                                <img src="images/about-2.jpeg" alt="О нас картинка - 2">
-                            </picture>
-                        </div>
-                        <div class="about--content__images--3 --content__images--img">
-                            <picture>
-                                <source srcset="images/about-3.avif" type="image/avif">
-                                <source srcset="images/about-3.webp" type="image/webp">
-                                <img src="images/about-3.jpeg" alt="О нас картинка - 3">
-                            </picture>
+                    <div class="about--content__images--flex">
+                        <div class="about--content__images">
+                            <div class="about--content__images--1 about--content__images--img">
+                                <picture>
+                                    <source srcset="images/about-1-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                    <source srcset="images/about-1-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                    <source srcset="images/about-1-1440.webp" type="image/webp" media="(min-width: 1440px)">
+                                    <source srcset="images/about-1-1440.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                    <source srcset="images/about-1-1024.webp" type="image/webp" media="(min-width: 393px)">
+                                    <source srcset="images/about-1-1024.jpeg" type="image/jpeg" media="(min-width: 393px)">
+                                    <source srcset="images/about-1-393.webp" type="image/webp" media="(min-width: 0px)">
+                                    <source srcset="images/about-1-393.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                    <img src="images/about-1-1920.jpeg" alt="О нас картинка - 1">
+                                </picture>
+                            </div>
+                            <div class="about--content__images--2 about--content__images--img">
+                                <picture>
+                                    <source srcset="images/about-2-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                    <source srcset="images/about-2-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                    <source srcset="images/about-2-1440.webp" type="image/webp" media="(min-width: 1440px)">
+                                    <source srcset="images/about-2-1440.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                    <source srcset="images/about-2-1024.webp" type="image/webp" media="(min-width: 393px)">
+                                    <source srcset="images/about-2-1024.jpeg" type="image/jpeg" media="(min-width: 393px)">
+                                    <source srcset="images/about-2-393.webp" type="image/webp" media="(min-width: 0px)">
+                                    <source srcset="images/about-2-393.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                    <img src="images/about-2-1920.jpeg" alt="О нас картинка - 2">
+                                </picture>
+                            </div>
+                            <div class="about--content__images--3 about--content__images--img">
+                                <picture>
+                                    <source srcset="images/about-3-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                    <source srcset="images/about-3-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                    <source srcset="images/about-3-1440.webp" type="image/webp" media="(min-width: 1440px)">
+                                    <source srcset="images/about-3-1440.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                    <source srcset="images/about-3-1024.webp" type="image/webp" media="(min-width: 393px)">
+                                    <source srcset="images/about-3-1024.jpeg" type="image/jpeg" media="(min-width: 393px)">
+                                    <source srcset="images/about-3-393.webp" type="image/webp" media="(min-width: 0px)">
+                                    <source srcset="images/about-3-393.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                    <img src="images/about-3-1920.jpeg" alt="О нас картинка - 3">
+                                </picture>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -418,7 +599,7 @@
                 </a>
             </div>
         </section>
-        <section class="connection">
+        <section class="connection" id="connection">
             <div class="container">
                 <div class="connection--container">
                     <div class="connection--links">
@@ -429,7 +610,7 @@
                         <ul class="connection--list">
                             <li class="connection--list__item">
                                 <span class="connection--label">
-                                    <img src="../images/src/phone-gray.svg" alt="Телефон">
+                                    <img src="images/phone-gray.svg" alt="Телефон">
                                     Телефон:
                                 </span>
                                 <a href="tel:+79061536104" class="connection--info">
@@ -438,7 +619,7 @@
                             </li>
                             <li class="connection--list__item">
                                 <span class="connection--label">
-                                    <img src="../images/src/map-gray.svg" alt="Карта">
+                                    <img src="images/map-gray.svg" alt="Карта">
                                     Адрес:
                                 </span>
                                 <a href="https://yandex.ru/maps/-/CDgdJP8G" class="connection--info">
@@ -447,7 +628,7 @@
                             </li>
                             <li class="connection--list__item">
                                 <span class="connection--label">
-                                    <img src="../images/src/mail-gray.svg" alt="Почта">
+                                    <img src="images/mail-gray.svg" alt="Почта">
                                     Почта:
                                 </span>
                                 <a href="mailto:emiliansar@gmail.com" class="connection--info">
@@ -459,13 +640,17 @@
                     <div class="connection--map">
                         <a href="https://yandex.ru/maps/-/CDgdJP8G" class="connection--map__link"> 
                             <picture>
-                                <source srcset="images/map.avif" type="image/avif">
-                                <source srcset="images/map.webp" type="image/webp">
-                                <img src="images/map.jpeg" alt="Индивидуальное обучение" class="Карта">
+                                <source srcset="images/map-1920.webp" type="image/webp" media="(min-width: 1024px)">
+                                <source srcset="images/map-1920.jpeg" type="image/jpeg" media="(min-width: 1024px)">
+                                <source srcset="images/map-1024.webp" type="image/webp" media="(min-width: 393px)">
+                                <source srcset="images/map-1024.jpeg" type="image/jpeg" media="(min-width: 393px)">
+                                <source srcset="images/map-393.webp" type="image/webp" media="(min-width: 0px)">
+                                <source srcset="images/map-393.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                <img src="images/map-1920.jpeg">
                             </picture>
-                            <span class="connection--map__lock">
-                                <img src="../images/src/map-lock-red.svg" alt="">
-                            </span>
+                            <!-- <span class="connection--map__lock">
+                                <img src="images/map-lock-red.svg" alt="">
+                            </span> -->
                         </a>
                     </div>
                 </div>
@@ -475,7 +660,12 @@
     <footer class="footer">
         <div class="container">
             <a href="index.html" class="footer--index">
-                <img src="../images/src/skillart-logo-footer.svg" alt="" class="footer--svg">
+                <!-- <img src="images/skillart-logo-footer-1920.svg" alt="" class="footer--svg"> -->
+                <picture>
+                    <source srcset="images/skillart-logo-footer-1920.svg" type="image/svg" media="(min-width: 640px)">
+                    <source srcset="images/skillart-logo-footer-393.svg" type="image/svg" media="(min-width: 0px)">
+                    <img src="images/skillart-logo-footer-1920.svg">
+                </picture>
             </a>
             <div class="descr">
                 <span class="descr--title">ИП Непогода Р.А.  УНП 291210693</span>
@@ -486,19 +676,19 @@
                         </li>
                         <li class="nav--descr__item">
                             <a href="tel:+79061536104" class="nav--descr__link">
-                                <img src="../images/src/phone-footer.svg" alt="">
+                                <img src="images/phone-footer.svg" alt="">
                                 <span>+7 906 153 61 04</span>
                             </a>
                         </li>
                         <li class="nav--descr__item">
                             <a href="https://yandex.ru/maps/-/CDgm6ZKI" class="nav--descr__link">
-                                <img src="../images/src/map-footer.svg" alt="">
+                                <img src="images/map-footer.svg" alt="">
                                 <span>Красково, Лорха 3</span>
                             </a>
                         </li>
                         <li class="nav--descr__item">
                             <a href="mailto:emiliansar@gmail.com" class="nav--descr__link">
-                                <img src="../images/src/mail-footer.svg" alt="">
+                                <img src="images/mail-footer.svg" alt="">
                                 <span>emiliansar@gmail.com</span>
                             </a>
                         </li>

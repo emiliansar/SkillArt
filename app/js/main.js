@@ -47,3 +47,14 @@ const report = new Swiper('.report--slider', {
     },
     spaceBetween: 20,
 });
+
+let btn = document.querySelector('.nav--button');
+
+btn.addEventListener('click', open);
+
+function open(evt) {
+    let targetBtn = evt.currentTarget,
+        hashBtn = targetBtn.dataset.button;
+    
+    document.querySelector(`.${hashBtn}`).classList.toggle(`${hashBtn}--active`);
+}

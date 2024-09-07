@@ -1,0 +1,20 @@
+Jost
+font-size: 14px, 55px, 45px, 30px, 45px, 20px, 16px
+font-weight: 400, 500, 600, 500, 500, 400, 400
+line-height: 20px, 79px, 65px, 43px, 65px, 145%, 145% ////////////// Если line-height не изменяется с увеличением шрифта, то изменить вручную /////////////////////
+
+Inter
+font-size: 18px, 30px, 20px, 18px, 20px, 20px, 16px, 40px, 20px, 20px, 25px
+font-weight: 400, 400, 400, 400, 500, 400, 400, 500, 400, 500, 400
+line-height: 22px, 36px, 24px, 145%, 145%, 145%, 145%, 145%, 165%, 165%, 150%
+
+font-weight
+100 - thin
+200 - Ultralite
+300 - lite
+400 - normal
+500 - medium
+600 - semibold
+700 - bold
+800 - Heavy
+900 - black
