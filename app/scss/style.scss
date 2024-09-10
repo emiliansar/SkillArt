@@ -773,7 +773,7 @@ main,
 
         &--content {
             display: flex;
-            gap: 190px;
+            justify-content: space-between;
         }
 
         &--teacher {
@@ -811,6 +811,7 @@ main,
         }
 
         &--text p {
+            width: 100%;
             font-family: 'Inter', sans-serif;
             font-weight: 400;
             font-size: 20px;
@@ -1400,6 +1401,70 @@ main,
             transform: translateX(59%);
         }
     }
+
+    .path--text {
+        font-size: 14px;
+    }
+
+    .plan--big__title {
+        margin-bottom: 55px;
+    }
+
+    .month {
+        margin-bottom: 80px;
+
+        &--name {
+            font-size: 35px;
+        }
+    }
+
+    .course--plan__info--sub {
+        .date--time span{
+            font-size: 18px;
+        }
+        .places span {
+            font-size: 18px;
+        }
+    }
+
+    .course--plan__info {
+
+        &--title {
+            font-size: 25px;
+        }
+
+        &--teacher__avatar {
+            max-width: 40px;
+        }
+
+        &--teacher__name {
+            font-size: 18px;
+        }
+
+        &--teacher__prof {
+            font-size: 16px;
+        }
+
+        &--text {
+            max-width: 690px;
+
+            & p {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .links--index__course {
+        &--index {
+            width: 260px;
+            font-size: 18px;
+        }
+
+        &--course {
+            width: 265px;
+            font-size: 18px;
+        }
+    }
 }
 
 @media(max-width: 1440px) {
@@ -1524,6 +1589,21 @@ main,
         max-width: 545px;
     }
 
+    .month {
+
+        &--name {
+            font-size: 30px;
+        }
+
+        & .swiper-wrapper {
+            justify-content: center;
+        }
+    }
+
+    .course--plan__info--text {
+        max-width: 545px;
+    }
+
     .footer .nav {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1548,6 +1628,10 @@ main,
 }
 
 @media(max-width: 1024px) {
+    .path {
+        margin: 60px 0;
+    }
+
     .footer {
         padding: 70px 70px 160px;
 
@@ -1608,6 +1692,48 @@ main,
             min-width: 214px;
         }
     }
+
+    .course--plan__info--sub .date--time span {
+        font-size: 16px;
+    }
+
+    .course--plan__info--sub .places span {
+        font-size: 16px;
+    }
+
+    .course--plan__info {
+        &:not(:last-child) {
+            padding-bottom: 20px;
+        }
+
+        &--title {
+            font-size: 20px;
+        }
+
+        &--from {
+            gap: 20px;
+        }
+
+        &--teacher__avatar {
+            max-width: 35px;
+        }
+
+        &--teacher__name {
+            font-size: 16px;
+        }
+
+        &--teacher__prof {
+            font-size: 14px;
+        }
+
+        &--text {
+            max-width: 370px;
+
+            & p {
+                font-size: 16px;
+            }
+        }
+    }
 }
 
 
@@ -1662,6 +1788,39 @@ main,
         }
     }
 
+    .month {
+        &--name {
+            font-size: 18px;
+        }
+    }
+
+    .course--plan__info--sub .date--time span {
+        font-size: 12px;
+    }
+
+    .course--plan__info--sub .places span {
+        font-size: 12px;
+    }
+
+    .course--plan__info {
+        &--content {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    .links--index__course {
+        &--index {
+            font-size: 15px;
+            width: 201px;
+        }
+
+        &--course {
+            font-size: 15px;
+            width: 201px;
+        }
+    }
+
     .footer {
         padding: 40px 20px 79px;
 
@@ -1710,8 +1869,12 @@ main,
     .nav {
         gap: 60px;
     }
+
+    .path {
+        margin: 20px 0 30px;
+    }
     
-    .swiper {
+    .swiper .swiper {
         &-slide {
             text-align: center;
 
@@ -1875,9 +2038,79 @@ main,
         }
     }
 
+    .path--text {
+        font-size: 10px;
+    }
+
+    .plan {
+        margin-bottom: 40px;
+    }
+
+    .plan--big__title {
+        margin-bottom: 30px;
+    }
+
+    .month {
+        margin-bottom: 30px;
+        & .swiper-slide {
+            padding: 0 10px;
+        }
+    }
+
+    .course--plan__info--sub .date--time span {
+        font-size: 10px;
+    }
+
+    .course--plan__info--sub .places span {
+        font-size: 10px;
+    }
+
+    .course--plan .course {
+        gap: 15px;
+    }
+
+    .course--plan__info {
+        &--title {
+            font-size: 18px;
+        }
+
+        &--content {
+            gap: 15px;
+        }
+
+        &--teacher__avatar {
+            max-width: 25px;
+        }
+
+        &--teacher__name {
+            font-size: 10px;
+        }
+
+        &--teacher__prof {
+            font-size: 10px;
+        }
+
+        &--text p {
+            font-size: 13px;
+        }
+    }
+
+    .links--index__course {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+
     .footer {
         & .nav--descr {
             align-items: start;
         }
+    }
+}
+
+@media(max-width: 375px) {
+    .course--plan__info--sub {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
     }
 }

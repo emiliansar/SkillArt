@@ -20,6 +20,17 @@ const month = new Swiper('.month', {
     clickable: true,
     slidesPerView: 3,
     spaceBetween: 100,
+
+    breakpoints: {
+        450: {
+          spaceBetween: 30,
+        },
+    },
+    breakpoints: {
+        200: {
+          spaceBetween: 15,
+        },
+    }
 });
 
 const plan = new Swiper('.course--plan', {
@@ -30,6 +41,11 @@ const plan = new Swiper('.course--plan', {
     thumbs: {
         swiper: month,
     },
+    breakpoints: {
+        0: {
+          spaceBetween: 30,
+        },
+    }
 });
 
 const report = new Swiper('.report--slider', {
