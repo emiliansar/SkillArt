@@ -62,15 +62,21 @@ const report = new Swiper('.report--slider', {
         eventsTarget: '.report--slider',
     },
     spaceBetween: 20,
+    breakpoints: {
+        1150: {
+            slidesPerView: 3,
+        },
+        0: {
+            slidesPerView: 1,
+        },
+    },
 });
 
-let btn = document.querySelector('.nav--button');
+const btn = document.querySelector('.nav--button');
 
-btn.addEventListener('click', open);
+btn.addEventListener('click', function (e) {
+    const menu = document.querySelector('.nav--menu');
 
-function open(evt) {
-    let targetBtn = evt.currentTarget,
-        hashBtn = targetBtn.dataset.button;
-    
-    document.querySelector(`.${hashBtn}`).classList.toggle(`${hashBtn}--active`);
-}
+    btn.classList.toggle('nav--button--active');
+    menu.classList.toggle('nav--menu--active');
+});
