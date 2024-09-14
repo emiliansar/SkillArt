@@ -121,9 +121,10 @@ function building() {
         'app/css/style.min.css',
         'app/js/main.min.js',
         'app/images/*.*',
-        '!app/images/*.svg',
+        'app/images/favicon/*.*',
         'app/images/sprite.svg',
         'app/fonts/*.*',
+        'app/favicon*',
         'app/*.html',
         '!app/images/stack/sprite.stack.html'
     ], {base : 'app'})

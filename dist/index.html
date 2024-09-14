@@ -1,18 +1,761 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="favicon.ico" type="image/icon">
+    <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png"><!-- 180x180 -->
+    <link rel="manifest" href="favicon.webmanifest">
+
     <title>SKILL ART</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+    <header class="header">
+        <div class="animation">
+            <div class="animation--text">
+                <span class="animation--text__item">5 - 6 ИЮЛЯ КУРС “ДЛЯ НАЧИНАЮЩИХ”</span>
+                <span class="animation--text__item">5 - 6 ИЮЛЯ КУРС “ДЛЯ НАЧИНАЮЩИХ”</span>
+                <span class="animation--text__item">5 - 6 ИЮЛЯ КУРС “ДЛЯ НАЧИНАЮЩИХ”</span>
+                <span class="animation--text__item">5 - 6 ИЮЛЯ КУРС “ДЛЯ НАЧИНАЮЩИХ”</span>
+                <span class="animation--text__item">5 - 6 ИЮЛЯ КУРС “ДЛЯ НАЧИНАЮЩИХ”</span>
+                <span class="animation--text__item">5 - 6 ИЮЛЯ КУРС “ДЛЯ НАЧИНАЮЩИХ”</span>
+                <span class="animation--text__item">5 - 6 ИЮЛЯ КУРС “ДЛЯ НАЧИНАЮЩИХ”</span>
+                <span class="animation--text__item">5 - 6 ИЮЛЯ КУРС “ДЛЯ НАЧИНАЮЩИХ”</span>
+            </div>
+        </div>
+        <div class="nav--wrapper">
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav--pages">
+                        <li class="nav--pages__item">
+                            <a href="#connection" class="nav--pages__link">Контакты</a>
+                        </li>
+                        <li class="nav--pages__item">
+                            <a href="about.html" class="nav--pages__link">О нас</a>
+                        </li>
+                        <li class="nav--pages__item nav--pages__index">
+                            <a href="index.html" class="nav--pages__link">
+                                <!-- <img src="images/src/skillart-logo.svg" alt="SKILLart logo" class="nav--pages__logo"> -->
+                                <!-- <picture>
+                                    <source srcset="images/skillart-logo-black-1920red.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                    <source srcset="images/skillart-logo-black-1440red.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                    <source srcset="images/skillart-logo-black-1024red.jpeg" type="image/jpeg" media="(min-width: 1000px)">
+                                    <source srcset="images/skillart-logo-black-393red.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                    <img src="images/skillart-logo-black-1920.jpeg" class="nav--pages__logo">
+                                </picture> -->
+                                <picture>
+                                    <source srcset="images/skillart-logo-black-1920.svg" type="image/svg" media="(min-width: 1600px)">
+                                    <source srcset="images/skillart-logo-black-1440.svg" type="image/svg" media="(min-width: 1440px)">
+                                    <source srcset="images/skillart-logo-black-1024.svg" type="image/svg" media="(min-width: 1000px)">
+                                    <source srcset="images/skillart-logo-black-393.svg" type="image/svg" media="(min-width: 0px)">
+                                    <img src="images/skillart-logo-black-1920.svg" class="nav--pages__logo">
+                                </picture>
+                            </a>
+                        </li>
+                        <li class="nav--pages__item">
+                            <a href="#school" class="nav--pages__link">Курсы</a>
+                        </li>
+                        <li class="nav--pages__item">
+                            <a href="plan.html" class="nav--pages__link">Расписание</a>
+                        </li>
+                    </ul>
+                    <ul class="nav--links">
+                        <li class="nav--links__item">
+                            <a href="tel:+79061536104" class="nav--links__link">
+                                <img src="images/phone.svg" alt="phone-link" class="nav--links__img">
+                            </a>
+                        </li>
+                        <li class="nav--links__item">
+                            <a href="mailto:emiliansar@gmail.com" class="nav--links__link">
+                                <img src="images/mail.svg" alt="mail-link" class="nav--links__img">
+                            </a>
+                        </li>
+                            <li class="nav--links__item">
+                            <a href="https://t.me/Emelay_1234" class="nav--links__link">
+                                <img src="images/telegram.svg" alt="telegram-link" class="nav--links__img">
+                            </a>
+                        </li>
+                        <li class="nav--links__item">
+                            <a href="" class="nav--links__link">
+                                <img src="images/instagram.svg" alt="instagram-link" class="nav--links__img">
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="nav--button" id="burgerButton" data-button="nav--menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="nav--menu">
+                        <ul class="nav--menu__list">
+                            <li class="nav--menu__item">
+                                <a href="#school" class="nav--menu__title--link">КУРСЫ</a>
+                            </li>
+                            <li class="nav--menu__item">
+                                    <ul class="menu--list">
+                                        <li class="menu--item">
+                                            <a href="course-junior.html" class="menu--link">Курс “Для начинающих”</a>
+                                        </li>
+                                        <li class="menu--item">
+                                            <a href="course-imitation-marble.html" class="menu--link">Курс “Имитация мрамора”</a>
+                                        </li>
+                                        <li class="menu--item">
+                                            <a href="course-loft.html" class="menu--link">Курс “Лофт”</a>
+                                        </li>
+                                        <li class="menu--item">
+                                            <a href="course-stencil-techniques.html" class="menu--link">Курс “Трафаретные техники для акцентных стен в интерьере”</a>
+                                        </li>
+                                        <li class="menu--item">
+                                            <a href="course-thin-layer.html" class="menu--link">Курс “Тонкослойные нанесения”</a>
+                                        </li>
+                                        <li class="menu--item">
+                                            <a href="course-individual-training.html" class="menu--link">Индивидуальное обучение</a>
+                                        </li>
+                                    </ul>
+                            </li>
+                            <li class="nav--menu__item">
+                                <a href="plan.html" class="nav--menu__title--link">РАСПИСАНИЕ</a>
+                            </li>
+                            <li class="nav--menu__item">
+                                <a href="index.html#connection" class="nav--menu__title--link">КОНТАКТЫ</a>
+                            </li>
+                            <li class="nav--menu__item">
+                                <ul class="links--list">
+                                    <li class="links--item">
+                                        <a href="tel:+79061536104" class="links--link">
+                                            <img src="images/phone-burger-menu.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="links--item">
+                                        <a href="mailto:emiliansar@gmail.com" class="links--link">
+                                            <img src="images/mail-burger-menu.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="links--item">
+                                        <a href="https://t.me/Emelay_1234" class="links--link">
+                                            <img src="images/telegram-burger-menu.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="links--item">
+                                        <a href="" class="links--link">
+                                            <img src="images/instagram-burger-menu.svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+    </header>
     <main>
-        <h1>index</h1>
-        <a href="course.html">
-            <h2>course</h2>
-        </a>
+        <div class="slider--wrapper">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 1750px)"/>
+                            <source srcset="images/slider-big-1-1920.jpeg" type="image/jpeg" media="(min-width: 1750px)"/>
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1440.jpeg" type="image/jpeg" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1440.webp" type="image/webp" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-1440.jpeg" type="image/jpeg" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-540.webp" type="image/webp" media="(min-width: 0px)"/>
+                            <source srcset="images/slider-big-1-540.jpeg" type="image/jpeg" media="(min-width: 0px)"/>
+                            <img src="images/slider-big-1-1920.jpeg" alt="slide-1">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-1440.jpeg" type="image/jpeg" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-540.webp" type="image/webp" media="(min-width: 0px)"/>
+                            <source srcset="images/slider-big-1-540.jpeg" type="image/jpeg" media="(min-width: 0px)"/>
+                            <img src="images/slider-big-1-1920.jpeg" alt="slide-1">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-1440.jpeg" type="image/jpeg" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-540.webp" type="image/webp" media="(min-width: 0px)"/>
+                            <source srcset="images/slider-big-1-540.jpeg" type="image/jpeg" media="(min-width: 0px)"/>
+                            <img src="images/slider-big-1-1920.jpeg" alt="slide-1">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-1440.jpeg" type="image/jpeg" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-540.webp" type="image/webp" media="(min-width: 0px)"/>
+                            <source srcset="images/slider-big-1-540.jpeg" type="image/jpeg" media="(min-width: 0px)"/>
+                            <img src="images/slider-big-1-1920.jpeg" alt="slide-1">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/slider-big-1-1920.webp" type="image/webp" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1920.webp" type="image/jpeg" media="(min-width: 1600px)"/>
+                            <source srcset="images/slider-big-1-1920.jpeg" type="image/webp" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-1440.jpeg" type="image/jpeg" media="(min-width: 540px)"/>
+                            <source srcset="images/slider-big-1-540.webp" type="image/webp" media="(min-width: 0px)"/>
+                            <source srcset="images/slider-big-1-540.jpeg" type="image/jpeg" media="(min-width: 0px)"/>
+                            <img src="images/slider-big-1-1920.jpeg" alt="slide-1">
+                        </picture>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="links">
+            <h2 class="section--big__title links--title">
+                Обучение декоративной штукатурке в Минске
+            </h2>
+            <p class="links--descr">
+                Хочешь научиться интересной и престижной профессии?
+            </p>
+            <a href="#" class="links--link">
+                <img src="images/src/telegram-black-block.svg" alt="tg-lnk">
+                Записаться на курс
+            </a>
+        </div>
+        <section class="school" id="school">
+            <div class="container">
+                <div class="school--wrapper">
+                    <h2 class="section--title school--title">
+                        Школа декораторов SKILLart предлагает следующие курсы:
+                    </h2>
+                    <ul class="school--cards">
+                        <li class="school--cards__item card">
+                            <picture>
+                                <source srcset="images/course-junior-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                <source srcset="images/course-junior-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                <source srcset="images/course-junior-1440.webp" type="image/webp" media="(min-width: 1440px)">
+                                <source srcset="images/course-junior-1440.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                <source srcset="images/course-junior-1024.webp" type="image/webp" media="(min-width: 640px)">
+                                <source srcset="images/course-junior-1024.jpeg" type="image/jpeg" media="(min-width: 640px)">
+                                <source srcset="images/course-junior-640.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                <source srcset="images/course-junior-640.webp" type="image/webp" media="(min-width: 0px)">
+                                <img src="images/course-junior.jpeg" alt="Курс для начинающих" class="school--img">
+                            </picture>
+                            <p class="card--title">
+                                Курс “Для начинающих”
+                            </p>
+                            <p class="card--descr">
+                                подходит для тех, кто хочет познакомится с декоративными материалами и базовыми техниками нанесения декоративной штукатурки, для маляров, кто хочет попробовать самостоятельно сделать у себя дома декор
+                            </p>
+                            <p class="card--info">
+                                <span class="span">
+                                    <img src="../images/src/card-info-time.svg" alt="">
+                                    2 дня
+                                    <span>(с 10:00 до 18:00)</span>
+                                </span>
+                                <span class="span">
+                                    <img src="../images/src/material.svg" alt="">
+                                    10 видов материалов
+                                </span>
+                                <span class="span">
+                                    <img src="../images/src/tehnik.svg" alt="">
+                                    10 видов техник
+                                </span>
+                            </p>
+                            <div class="card--buy">
+                                <span class="card--buy__descr">
+                                    Стоимость:
+                                </span>
+                                <p class="card--buy__sum">
+                                    400 BYN
+                                </p>
+                                <a href="course-junior.html" class="card--buy__link">
+                                    Подробнее про курс
+                                </a>
+                            </div>
+                        </li>
+                        <li class="school--cards__item card">
+                            <!-- <picture>
+                                <source srcset="images/course-imitation-marble.avif" type="image/avif">
+                                <source srcset="images/course-imitation-marble.webp" type="image/webp">
+                                <img src="images/course-imitation-marble.jpeg" alt="Курс по имитации мрамора" class="school--img">
+                            </picture> -->
+                            <picture>
+                                <source srcset="images/course-imitation-marble-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                <source srcset="images/course-imitation-marble-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                <source srcset="images/course-imitation-marble-1440.webp" type="image/webp" media="(min-width: 1440px)">
+                                <source srcset="images/course-imitation-marble-1400.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                <source srcset="images/course-imitation-marble-1024.webp" type="image/webp" media="(min-width: 640px)">
+                                <source srcset="images/course-imitation-marble-1024.jpeg" type="image/jpeg" media="(min-width: 640px)">
+                                <source srcset="images/course-imitation-marble-640.webp" type="image/webp" media="(min-width: 0px)">
+                                <source srcset="images/course-imitation-marble-640.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                <img src="images/course-imitation-marble-1920.jpeg" alt="Курс по имитации мрамора" class="school--img">
+                            </picture>
+                            <p class="card--title">
+                                Курс “Имитация мрамора”
+                            </p>
+                            <p class="card--descr">
+                                подходит для практикующих мастеров, кто хочет научится делать различные эффекты мрамора из венецианской штукатурки
+                            </p>
+                            <p class="card--info">
+                                <span class="span">
+                                    <img src="../images/src/card-info-time.svg" alt="">
+                                    2 дня
+                                    <span>(с 10:00 до 19:00)</span>
+                                </span>
+                                <span class="span">
+                                    <img src="../images/src/tehnik.svg" alt="">
+                                    Черный, белый мрамор
+                                </span>
+                                <span class="span">
+                                    <img src="../images/src/tehnik.svg" alt="">
+                                    Мрамор в 4-5 цветов
+                                </span>
+                            </p>
+                            <div class="card--buy">
+                                <span class="card--buy__descr">
+                                    Стоимость:
+                                </span>
+                                <p class="card--buy__sum">
+                                    450 BYN
+                                </p>
+                                <a href="course-imitation-marble.html" class="card--buy__link">
+                                    Подробнее про курс
+                                </a>
+                            </div>
+                        </li>
+                        <li class="school--cards__item card">
+                            <!-- <picture>
+                                <source srcset="images/course-loft.avif" type="image/avif">
+                                <source srcset="images/course-loft.webp" type="image/webp">
+                                <img src="images/course-loft.jpeg" alt="Курс лофт" class="school--img">
+                            </picture> -->
+                            <picture>
+                                <source srcset="images/course-loft-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                <source srcset="images/course-loft-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                <source srcset="images/course-loft-1400.webp" type="image/webp" media="(min-width: 1440px)">
+                                <source srcset="images/course-loft-1400.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                <source srcset="images/course-loft-1024.webp" type="image/webp" media="(min-width: 640px)">
+                                <source srcset="images/course-loft-1024.jpeg" type="image/jpeg" media="(min-width: 640px)">
+                                <source srcset="images/course-loft-640.webp" type="image/webp" media="(min-width: 0px)">
+                                <source srcset="images/course-loft-640.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                <img src="images/course-loft-1920.jpeg" alt="Курс лофт" class="school--img">
+                            </picture>
+                            <p class="card--title">
+                                Курс “Лофт”
+                            </p>
+                            <p class="card--descr">
+                                подходит для тех кто хочет прокачать свои навыки нанесения декоративной штукатурки в стиле лофт
+                            </p>
+                            <p class="card--info">
+                                <span class="span">
+                                    <img src="../images/src/card-info-time.svg" alt="">
+                                    2 дня
+                                    <span>(с 10:00 до 18:00)</span>
+                                </span>
+                                <span class="span">
+                                    <img src="../images/src/tehnik.svg" alt="">
+                                    6 видов техник
+                                </span>
+                            </p>
+                            <div class="card--buy">
+                                <span class="card--buy__descr">
+                                    Стоимость:
+                                </span>
+                                <p class="card--buy__sum">
+                                    400 BYN
+                                </p>
+                                <a href="course-loft.html" class="card--buy__link">
+                                    Подробнее про курс
+                                </a>
+                            </div>
+                        </li>
+                        <li class="school--cards__item card">
+                            <!-- <picture>
+                                <source srcset="images/course-stencil.avif" type="image/avif">
+                                <source srcset="images/course-stencil.webp" type="image/webp">
+                                <img src="images/course-stencil.jpeg" alt="Трафаретные техники" class="school--img">
+                            </picture> -->
+                            <picture>
+                                <source srcset="images/course-stencil-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                <source srcset="images/course-stencil-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                <source srcset="images/course-stencil-1440.webp" type="image/webp" media="(min-width: 1440px)">
+                                <source srcset="images/course-stencil-1440.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                <source srcset="images/course-stencil-1024.webp" type="image/webp" media="(min-width: 640px)">
+                                <source srcset="images/course-stencil-1024.jpeg" type="image/jpeg" media="(min-width: 640px)">
+                                <source srcset="images/course-stencil-640.webp" type="image/webp" media="(min-width: 0px)">
+                                <source srcset="images/course-stencil-640.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                <img src="images/course-stencil-1920.jpeg" alt="Трафаретные техники" class="school--img">
+                            </picture>
+                            <p class="card--title">
+                                Трафаретные техники 
+для акцентных стен в интерьере
+                            </p>
+                            <p class="card--descr">
+                                подходит для тех кто хочет научиться работать с трафаретами в 3,4-5 цветов, тем самым создавать акцентные стены в интерьере
+                            </p>
+                            <p class="card--info">
+                                <span class="span">
+                                    <img src="../images/src/card-info-time.svg" alt="">
+                                    2 дня
+                                    <span>(с 10:00 до 15:00)</span>
+                                </span>
+                                <span class="span">
+                                    <img src="../images/src/tehnik.svg" alt="">
+                                    3 вида техник
+                                </span>
+                            </p>
+                            <div class="card--buy">
+                                <span class="card--buy__descr">
+                                    Стоимость:
+                                </span>
+                                <p class="card--buy__sum">
+                                    200 BYN
+                                </p>
+                                <a href="stencil-techniques.html" class="card--buy__link">
+                                    Подробнее про курс
+                                </a>
+                            </div>
+                        </li>
+                        <li class="school--cards__item card">
+                            <!-- <picture>
+                                <source srcset="images/course-thin-layer.avif" type="image/avif">
+                                <source srcset="images/course-thin-layer.webp" type="image/webp">
+                                <img src="images/course-thin-layer.jpeg" alt="Курс Тонкослойные нанесения" class="school--img">
+                            </picture> -->
+                            <picture>
+                                <source srcset="images/course-thin-layer-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                <source srcset="images/course-thin-layer-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                <source srcset="images/course-thin-layer-1440.webp" type="image/webp" media="(min-width: 1440px)">
+                                <source srcset="images/course-thin-layer-1440.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                <source srcset="images/course-thin-layer-1024.webp" type="image/webp" media="(min-width: 640px)">
+                                <source srcset="images/course-thin-layer-1024.jpeg" type="image/jpeg" media="(min-width: 640px)">
+                                <source srcset="images/course-thin-layer-640.webp" type="image/webp" media="(min-width: 0px)">
+                                <source srcset="images/course-thin-layer-640.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                <img src="images/course-thin-layer-1920.jpeg" alt="Курс Тонкослойные нанесения" class="school--img">
+                            </picture>
+                            <p class="card--title">
+                                Курс “Тонкослойные нанесения”
+                            </p>
+                            <p class="card--descr">
+                                подходит для тех кто хочет познакомится с различными тонкослойными декоративными штукатурками различных брендов
+                            </p>
+                            <p class="card--info">
+                                <span class="span">
+                                    <img src="../images/src/card-info-time.svg" alt="">
+                                    2 дня
+                                    <span>(с 10:00 до 18:00)</span>
+                                </span>
+                                <span class="span">
+                                    <img src="../images/src/tehnik.svg" alt="">
+                                    10 актуальных на рынке ТС нанесения
+                                </span>
+                            </p>
+                            <div class="card--buy">
+                                <span class="card--buy__descr">
+                                    Стоимость:
+                                </span>
+                                <p class="card--buy__sum">
+                                    400 BYN
+                                </p>
+                                <a href="course-thin-layer.html" class="card--buy__link">
+                                    Подробнее про курс
+                                </a>
+                            </div>
+                        </li>
+                        <li class="school--cards__item card">
+                            <!-- <picture>
+                                <source srcset="images/course-individual.avif" type="image/avif">
+                                <source srcset="images/course-individual.webp" type="image/webp">
+                                <img src="images/course-individual.jpeg" alt="" class="school--img">
+                            </picture> -->
+                            <picture>
+                                <source srcset="images/course-individual-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                <source srcset="images/course-individual-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                <source srcset="images/course-individual-1440.webp" type="image/webp" media="(min-width: 1440px)">
+                                <source srcset="images/course-individual-1440.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                <source srcset="images/course-individual-1024.webp" type="image/webp" media="(min-width: 640px)">
+                                <source srcset="images/course-individual-1024.jpeg" type="image/jpeg" media="(min-width: 640px)">
+                                <source srcset="images/course-individual-640.webp" type="image/webp" media="(min-width: 0px)">
+                                <source srcset="images/course-individual-640.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                <img src="images/course-individual-1920.jpeg" alt="Индивидуальное обучение" class="school--img">
+                            </picture>
+                            <p class="card--title">
+                                Индивидуальное обучение
+                            </p>
+                            <p class="card--descr">
+                                подходит для тех кто хочет пройти курс «Для начинающих» за один день, актуально для тех кто хочет приехать на обучение с другого города
+                            </p>
+                            <p class="card--info">
+                                <span class="span">
+                                    <img src="../images/src/card-info-time.svg" alt="">
+                                    По будним дням
+                                    <span>(с 10:00 до 18:00)</span>
+                                </span>
+                                <span class="span">
+                                    <img src="../images/src/tehnik.svg" alt="">
+                                    10 базовых техник
+                                </span>
+                            </p>
+                            <div class="card--buy">
+                                <span class="card--buy__descr">
+                                    Стоимость:
+                                </span>
+                                <p class="card--buy__sum">
+                                    500 BYN
+                                </p>
+                                <a href="course-individual-training.html" class="card--buy__link">
+                                    Подробнее про курс
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <h2 class="section--title about--title">
+                    О нас
+                </h2>
+
+                <div class="about--content">
+                    <div class="about--content__text">
+                        <p class="about--descr">
+                            <span>Школа декора SKILLART</span> – сообщество мастеров-декораторов с большим опытом работы на объектах, и мы хотим передать эти знания и опыт в работе с декоративными материалами вам.  
+                        </p>
+                        <p class="about--descr">
+                            За <span>10 лет нашей практики</span> мы поработали с различными производителями декоративных материалов и с уверенностью можем вам рассказать о материалах, которые пользуются спросом и отработать их техники нанесения. Для нас важно замотивировать и научить вас работать на стенах, создавая красоту.
+                        </p>
+                        <p class="about--descr">
+                            <span>Добро пожаловать в наше сообщество и до встречи у нас в мастерской!</span>
+                        </p>
+                    </div>
+                    <div class="about--content__images--flex">
+                        <div class="about--content__images">
+                            <div class="about--content__images--1 about--content__images--img">
+                                <picture>
+                                    <source srcset="images/about-1-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                    <source srcset="images/about-1-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                    <source srcset="images/about-1-1440.webp" type="image/webp" media="(min-width: 1440px)">
+                                    <source srcset="images/about-1-1440.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                    <source srcset="images/about-1-1024.webp" type="image/webp" media="(min-width: 393px)">
+                                    <source srcset="images/about-1-1024.jpeg" type="image/jpeg" media="(min-width: 393px)">
+                                    <source srcset="images/about-1-393.webp" type="image/webp" media="(min-width: 0px)">
+                                    <source srcset="images/about-1-393.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                    <img src="images/about-1-1920.jpeg" alt="О нас картинка - 1">
+                                </picture>
+                            </div>
+                            <div class="about--content__images--2 about--content__images--img">
+                                <picture>
+                                    <source srcset="images/about-2-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                    <source srcset="images/about-2-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                    <source srcset="images/about-2-1440.webp" type="image/webp" media="(min-width: 1440px)">
+                                    <source srcset="images/about-2-1440.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                    <source srcset="images/about-2-1024.webp" type="image/webp" media="(min-width: 393px)">
+                                    <source srcset="images/about-2-1024.jpeg" type="image/jpeg" media="(min-width: 393px)">
+                                    <source srcset="images/about-2-393.webp" type="image/webp" media="(min-width: 0px)">
+                                    <source srcset="images/about-2-393.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                    <img src="images/about-2-1920.jpeg" alt="О нас картинка - 2">
+                                </picture>
+                            </div>
+                            <div class="about--content__images--3 about--content__images--img">
+                                <picture>
+                                    <source srcset="images/about-3-1920.webp" type="image/webp" media="(min-width: 1600px)">
+                                    <source srcset="images/about-3-1920.jpeg" type="image/jpeg" media="(min-width: 1600px)">
+                                    <source srcset="images/about-3-1440.webp" type="image/webp" media="(min-width: 1440px)">
+                                    <source srcset="images/about-3-1440.jpeg" type="image/jpeg" media="(min-width: 1440px)">
+                                    <source srcset="images/about-3-1024.webp" type="image/webp" media="(min-width: 393px)">
+                                    <source srcset="images/about-3-1024.jpeg" type="image/jpeg" media="(min-width: 393px)">
+                                    <source srcset="images/about-3-393.webp" type="image/webp" media="(min-width: 0px)">
+                                    <source srcset="images/about-3-393.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                    <img src="images/about-3-1920.jpeg" alt="О нас картинка - 3">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews--inst">
+            <div class="container">
+                <h2 class="section--title reviews--inst__title">
+                    Отзывы
+                </h2>
+
+                <p class="reviews--inst__text">
+                    Хотите узнать мнение наших учеников? Нажмите на кнопку ниже и перейдите на нашу страницу в Instagram, где вы найдете реальные отзывы и впечатления от наших курсов.
+                </p>
+
+                <a href="#" class="reviews--inst__link">
+                    <img src="images/src/instagram-black-block.svg" alt="tg-lnk">
+                    Записаться на курс
+                </a>
+            </div>
+        </section>
+        <section class="connection" id="connection">
+            <div class="container">
+                <div class="connection--container">
+                    <div class="connection--links">
+                        <h2 class="section--title connection--title">
+                            Связаться с нами
+                        </h2>
+
+                        <ul class="connection--list">
+                            <li class="connection--list__item">
+                                <span class="connection--label">
+                                    <img src="images/phone-gray.svg" alt="Телефон">
+                                    Телефон:
+                                </span>
+                                <a href="tel:+79061536104" class="connection--info">
+                                    +7 906 153 61 04
+                                </a>
+                            </li>
+                            <li class="connection--list__item">
+                                <span class="connection--label">
+                                    <img src="images/map-gray.svg" alt="Карта">
+                                    Адрес:
+                                </span>
+                                <a href="https://yandex.ru/maps/-/CDgdJP8G" class="connection--info">
+                                    Люберцы, Красково, ул Лоха 3
+                                </a>
+                            </li>
+                            <li class="connection--list__item">
+                                <span class="connection--label">
+                                    <img src="images/mail-gray.svg" alt="Почта">
+                                    Почта:
+                                </span>
+                                <a href="mailto:emiliansar@gmail.com" class="connection--info">
+                                    emiliansar@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="connection--map">
+                        <a href="https://yandex.ru/maps/-/CDgdJP8G" class="connection--map__link"> 
+                            <picture>
+                                <source srcset="images/map-1920.webp" type="image/webp" media="(min-width: 1024px)">
+                                <source srcset="images/map-1920.jpeg" type="image/jpeg" media="(min-width: 1024px)">
+                                <source srcset="images/map-1024.webp" type="image/webp" media="(min-width: 393px)">
+                                <source srcset="images/map-1024.jpeg" type="image/jpeg" media="(min-width: 393px)">
+                                <source srcset="images/map-393.webp" type="image/webp" media="(min-width: 0px)">
+                                <source srcset="images/map-393.jpeg" type="image/jpeg" media="(min-width: 0px)">
+                                <img src="images/map-1920.jpeg">
+                            </picture>
+                            <!-- <span class="connection--map__lock">
+                                <img src="images/map-lock-red.svg" alt="">
+                            </span> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <a href="index.html" class="footer--index">
+                <!-- <img src="images/skillart-logo-footer-1920.svg" alt="" class="footer--svg"> -->
+                <picture>
+                    <source srcset="images/skillart-logo-footer-1920.svg" type="image/svg" media="(min-width: 640px)">
+                    <source srcset="images/skillart-logo-footer-393.svg" type="image/svg" media="(min-width: 0px)">
+                    <img src="images/skillart-logo-footer-1920.svg">
+                </picture>
+            </a>
+            <div class="descr">
+                <span class="descr--title">ИП Непогода Р.А.  УНП 291210693</span>
+                <nav class="nav">
+                    <ul class="nav--descr">
+                        <li class="nav--descr__item nav--descr__title">
+                            <span>Контакты:</span>
+                        </li>
+                        <li class="nav--descr__item">
+                            <a href="tel:+79061536104" class="nav--descr__link">
+                                <img src="images/phone-footer.svg" alt="">
+                                <span>+7 906 153 61 04</span>
+                            </a>
+                        </li>
+                        <li class="nav--descr__item">
+                            <a href="https://yandex.ru/maps/-/CDgm6ZKI" class="nav--descr__link">
+                                <img src="images/map-footer.svg" alt="">
+                                <span>Красково, Лорха 3</span>
+                            </a>
+                        </li>
+                        <li class="nav--descr__item">
+                            <a href="mailto:emiliansar@gmail.com" class="nav--descr__link">
+                                <img src="images/mail-footer.svg" alt="">
+                                <span>emiliansar@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav--descr">
+                        <li class="nav--descr__item nav--descr__title">
+                            <span>Курсы:</span>
+                        </li>
+                        <li class="nav--descr__item">
+                            <a href="tel:+79061536104" class="nav--descr__link">
+                                <span>“Для начинающих”</span>
+                            </a>
+                        </li>
+                        <li class="nav--descr__item">
+                            <a href="https://yandex.ru/maps/-/CDgm6ZKI" class="nav--descr__link">
+                                <span>“Имитация мрамора”</span>
+                            </a>
+                        </li>
+                        <li class="nav--descr__item">
+                            <a href="" class="nav--descr__link">
+                                <span>“Лофт”</span>
+                            </a>
+                        </li>
+                        <li class="nav--descr__item">
+                            <a href="" class="nav--descr__link">
+                                <span>“Индивидуальное обучение”</span>
+                            </a>
+                        </li>
+                        <li class="nav--descr__item">
+                            <a href="" class="nav--descr__link">
+                                <span>“Тонкослойные нанесения”</span>
+                            </a>
+                        </li>
+                        <li class="nav--descr__item">
+                            <a href="" class="nav--descr__link">
+                                <span>“Индивидуальное обучение”</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav--descr">
+                        <li class="nav--descr__item">
+                            <a href="" class="nav--descr__link">
+                                <span>Расписание курсов</span>
+                            </a>
+                        </li>
+                        <li class="nav--descr__item">
+                            <a href="" class="nav--descr__link">
+                                <span>Отзывы</span>
+                            </a>
+                        </li>
+                        <li class="nav--descr__item">
+                            <a href="" class="nav--descr__link">
+                                <span>О нас</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    
     <script src="js/main.min.js"></script>
 </body>
 </html>
