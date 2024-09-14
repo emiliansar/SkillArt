@@ -122,7 +122,6 @@ function building() {
         'app/js/main.min.js',
         'app/images/*.*',
         'app/images/favicon/*.*',
-        'app/images/sprite.svg',
         'app/fonts/*.*',
         'app/favicon*',
         'app/*.html',
